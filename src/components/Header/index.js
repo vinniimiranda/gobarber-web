@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { Container, Content, Profile } from './styles';
+import Notifications from '~/components/Notifications';
+
 import logo from '~/assets/logo-purple.svg';
+import { Container, Content, Profile } from './styles';
 
 export default function components() {
   return (
@@ -14,6 +16,7 @@ export default function components() {
         </nav>
 
         <aside>
+          <Notifications />
           <Profile>
             <div>
               <strong>Vinicius Miranda</strong>
