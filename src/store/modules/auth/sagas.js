@@ -15,6 +15,7 @@ export function* signIn({ payload }) {
 
     if (!user.provider) {
       toast.error('User not allowed');
+      yield put(signFailure());
       return;
     }
 
